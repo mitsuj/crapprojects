@@ -47,10 +47,11 @@ function draw() {
     if (document.getElementById(i.toString()).textContent === "") {
       isDraw = false;
       break;
-    } else if (isDraw && i === 9 && gameEnded===false) {
-      gameEnded = true;
-      xoro.textContent = "Draw, please restart...";
     }
+  }
+  if (isDraw && gameEnded === false) {
+    gameEnded = true;
+    xoro.textContent = "Draw, please restart...";
   }
 }
 function restart() {
