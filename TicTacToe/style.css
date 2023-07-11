@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4rem;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+#xoro {
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+table{
+    border: 3px solid;
+    border-collapse: collapse;
+    margin: 5rem auto 2rem;
+}
+td{
+    width: 100px;
+    height: 100px;
+    border: 3px solid;
+    font-size: 4rem;
+    text-align: center;
+}
+.win {
+    background-color: green;
+}
+#btn{
+    text-align: center;
+}
+#reset{
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    margin: 2px auto
+}
+#reset:hover{
+    background-color: black;
+    color: white;
+}
+#reset:active{
+    background-color: grey;
+    color: white;
+}
