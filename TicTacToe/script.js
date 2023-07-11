@@ -6,6 +6,7 @@ for (let i = 1; i <= 9; i++) {
     if (this.textContent === "" && !gameEnded) {
       this.textContent = player;
       winner();
+      draw();
       if (player === "X") {
         player = "O";
       } else {
@@ -37,6 +38,18 @@ function winner() {
       gameEnded = true;
       xoro.textContent = `${player} won`;
       xoro.classList.add("win");
+    }
+  }
+}
+function draw() {
+  let isDraw = true;
+  for (let i = 1; i <= 9; i++) {
+    if (document.getElementById(i.toString()).textContent === "") {
+      isDraw = false;
+      break;
+    } else if (isDraw && i === 9 && gameEnded===false) {
+      gameEnded = true;
+      xoro.textContent = "Draw, please restart...";
     }
   }
 }
